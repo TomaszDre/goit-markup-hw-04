@@ -420,13 +420,9 @@ button:hover {
 
 /* HEADER */
 
-.icon-mail {width: 16px;
-height: 12px;
-fill: orange;}
-
-.icon-phone {width: 16px;
-    height: 12px;
-    fill: orange;
+.icon-mail .icon-phone:hover,
+:focus {
+    fill: var(--brand-color-primary);
 }
 
 .hero {
@@ -439,19 +435,21 @@ fill: orange;}
     color: #fff;
     text-align: center;
     background-position: center;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+}
 
-    /* MAIN */
+/* MAIN */
 
-.icon-properties {-webkit-box-align: center;
-display: flex;
-align-items: center;
-justify-content: center;
--webkit-box-pack: center;
-padding: 25px 0;
-width: 100%;
-border-radius: 4px;
-background: #f5f4fa;
+.icon-properties {
+    -webkit-box-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    padding: 25px 0;
+    width: 100%;
+    border-radius: 4px;
+    background: #f5f4fa;
 }
 
 /* OUR TEAM */
@@ -459,9 +457,11 @@ background: #f5f4fa;
 .social-links {
     color: var(--brand-color-white);
     width: 206px;
-    height: 56px;}
+    height: 56px;
+}
 
-.social-links-properties {-webkit-box-align: center;
+.social-links-properties {
+    -webkit-box-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -487,4 +487,3 @@ icon-group3
 icon-group4
 icon-group5
  */
-
