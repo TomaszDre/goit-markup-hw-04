@@ -22,7 +22,7 @@ margin: -94px; */
 :root {
     --backgroung-page-color: #e5e5e5;
     --brand-color-primary: #2196f3;
-    --brand-color-background: #2f303a;
+    /* --brand-color-background: #2f303a; */
     --brand-color-secondary: #212121;
     --brand-color-ordinary: #f5f4fa;
     --brand-color-white: #ffffff;
@@ -416,10 +416,67 @@ button:hover {
     display: block;
 }
 /* Usuń margin i za duży line-height */
+
+/* HOMEWORK 4 */
+
+/* header */
+
 .icon-mail {width: 16px;
 height: 12px;
 fill: orange;}
 
 .icon-phone {width: 16px;
     height: 12px;
-    fill: orange;}
+    fill: orange;
+}
+
+.hero {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2f303a;
+    background-image: url(/goit-markup-hw-04/images/tło2.jpg);
+    color: #fff;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;}
+
+    /* MAIN */
+
+.feature {
+    width: 270px;
+    height: 120px;
+    background-color: var(--brand-color-ordinary);
+}
+.icon-properties {-webkit-box-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+-webkit-box-pack: center;
+padding: 25px 0;
+width: 100%;
+border-radius: 4px;
+background: #f5f4fa;
+}
+
+/* icons list
+
+icon-smartphone
+icon-envelope
+icon-antenna-1
+icon-clock-1
+icon-diagram-1
+icon-astronaut-1
+icon-instagram-2
+icon-Ellipse
+icon-linkedin-1
+icon-facebook-1
+icon-Union
+icon-group1
+icon-group2
+icon-group3
+icon-group4
+icon-group5
+ */
+
