@@ -416,3 +416,10 @@ button:hover {
     display: block;
 }
 /* Usuń margin i za duży line-height */
+.icon-mail {width: 16px;
+height: 12px;
+fill: orange;}
+
+.icon-phone {width: 16px;
+    height: 12px;
+    fill: orange;}
