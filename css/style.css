@@ -332,7 +332,7 @@ button:hover {
 .team-card {
     background-color: var(--brand-color-white);
     width: 270px;
-    height: 368px;
+    height: 428px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -415,11 +415,10 @@ button:hover {
 .no-gap {
     display: block;
 }
-/* Usuń margin i za duży line-height */
 
 /* HOMEWORK 4 */
 
-/* header */
+/* HEADER */
 
 .icon-mail {width: 16px;
 height: 12px;
@@ -444,11 +443,6 @@ fill: orange;}
 
     /* MAIN */
 
-.feature {
-    width: 270px;
-    height: 120px;
-    background-color: var(--brand-color-ordinary);
-}
 .icon-properties {-webkit-box-align: center;
 display: flex;
 align-items: center;
@@ -460,6 +454,14 @@ border-radius: 4px;
 background: #f5f4fa;
 }
 
+/* OUR TEAM */
+
+.social-links {display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-color-white);
+    width: 206px;
+    height: 56px;}
 /* icons list
 
 icon-smartphone
