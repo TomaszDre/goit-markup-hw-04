@@ -1,0 +1,418 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* notatka REDUKCJA MARGINESOW
+margin: -94px; */
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+:root {
+    --backgroung-page-color: #e5e5e5;
+    --brand-color-primary: #2196f3;
+    --brand-color-background: #2f303a;
+    --brand-color-secondary: #212121;
+    --brand-color-ordinary: #f5f4fa;
+    --brand-color-white: #ffffff;
+    --brand-color-logo-black: #000000;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--brand-color-secondary);
+    background-color: var(--background-page-color);
+    margin: 0 auto;
+    flex-direction: row;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    max-width: 696px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+h5 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+a:hover,
+:focus {
+    color: #2196f3;
+}
+
+button:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+
+.button {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px #00000026;
+    border-radius: 4px;
+}
+
+.menu {
+    display: flex;
+    /* padding jest 32, daje tyle i jest źle, tak samo jak usuwam statyczne wartości z header, nic sie nie zmienia, jedynie na gorzej */
+    background-color: var(--brand-color-default);
+}
+
+/* LOGO */
+
+.logo {
+    text-decoration: none;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    width: 145px;
+    height: 31px;
+    text-decoration: none;
+    color: var(--brand-color-primary);
+}
+
+.studio-black {
+    color: var(--brand-color-logo-black);
+}
+
+.studio-white {
+    color: var(--brand-color-white);
+}
+
+.top-line {
+    border-bottom: #ececec 1px solid;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 80px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+/* NAVIGATION */
+
+.navigation-list {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 261px;
+    max-height: 16px;
+    gap: 46px;
+    margin-right: 0px;
+    margin-left: 53px;
+}
+
+.contacts-top-line {
+    display: flex;
+    gap: 50px;
+    margin-left: 391px;
+}
+
+.email {
+    /* max-width: 135px;
+    max-height: 16px;
+    left: 1078px;
+    top: 32px; */
+    letter-spacing: 0.02em;
+    align-items: baseline;
+}
+
+.phone {
+    /* width: 110px;
+    height: 16px;
+    left: 1263px;
+    top: 32px; */
+    letter-spacing: 0.02em;
+    align-items: baseline;
+}
+
+.contacs {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+}
+
+/* ZAMÓW USUGĘ */
+
+.decoration {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+/* LOREM IPSUM */
+
+.lorem-list {
+    display: inline-flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+/* WHAT WE DO */
+
+.what-we-do {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0px;
+}
+
+.what-we-do-background {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 94px;
+}
+
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+.footer-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-decoration: none;
+}
+
+.background-footer {
+    background: #2f303a;
+}
+
+.container2 {
+    margin: 0 auto;
+    margin-top: 5px;
+    max-width: 1600px;
+    padding: 0px;
+}
+
+.container3 {
+    margin-top: -40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* EFEKTYWNE  */
+
+.order-service {
+    border: none;
+}
+.content {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--brand-color-background);
+}
+
+/* OUR TEAM */
+
+.our-team-background {
+    display: flex;
+    background-color: var(--brand-color-ordinary);
+    flex-direction: column;
+    max-width: 1900px;
+}
+
+.our-team-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.our-team {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.team-card {
+    background-color: var(--brand-color-white);
+    width: 270px;
+    height: 368px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0;
+    margin-bottom: 94px;
+    padding: 0px;
+}
+
+.our-team-card-description {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--inactive-header-contact-link);
+}
+
+/* PORTFOLIO */
+
+.pad-but {
+    padding-top: 30px;
+}
+
+.buttons-portfolio {
+    padding-top: 94px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.button-portfolio {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    border: none;
+    width: 121px;
+    height: 38px;
+    background: #f5f4fa;
+    border-radius: 4px;
+}
+
+.wrap {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.header-border {
+    box-sizing: border-box;
+    font-size: 18px;
+    background: #ffffff;
+    margin: 0px;
+}
+
+.p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 4px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.border-caption {
+    max-height: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+.no-gap {
+    display: block;
+}
+/* Usuń margin i za duży line-height */
