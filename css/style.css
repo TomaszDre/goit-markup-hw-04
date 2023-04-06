@@ -456,12 +456,18 @@ background: #f5f4fa;
 
 /* OUR TEAM */
 
-.social-links {display: flex;
-    align-items: center;
-    justify-content: center;
+.social-links {
     color: var(--brand-color-white);
     width: 206px;
     height: 56px;}
+
+.social-links-properties {-webkit-box-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-pack: center;
+}
+
 /* icons list
 
 icon-smartphone
