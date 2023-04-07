@@ -213,7 +213,7 @@ button:hover {
     align-items: baseline;
 }
 
-.contacs {
+.contacts {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -420,8 +420,8 @@ button:hover {
 
 /* HEADER */
 
-.icon-mail .icon-phone:hover,
-:focus {
+.icon-contact:hover,
+.icon-contact:focus {
     fill: var(--brand-color-primary);
 }
 
@@ -452,12 +452,14 @@ button:hover {
     background: #f5f4fa;
 }
 
-/* OUR TEAM */
+/* Our Team */
 
 .social-links {
     color: var(--brand-color-white);
     width: 206px;
     height: 56px;
+    padding: 12px 0;
+    fill: var(--brand-color-primary);
 }
 
 .social-links-properties {
@@ -466,6 +468,48 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     -webkit-box-pack: center;
+}
+
+.social-links:hover,
+.social-links:focus {
+    background-color: var(--brand-color-primary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Our clients */
+
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.client-link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--brand-color-primary);
+    padding: 19px 0;
+}
+
+.client-icon {
+    fill: var(--brand-color-primary);
+    display: flex;
+    margin: 16px 32px;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+    fill: var(--brand-color-primary);
+}
+
+.client-link:is(:hover, :focus) {
+    border-color: var(--brand-color-primary);
 }
 
 /* icons list
