@@ -1,8 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 
 .section {
     padding-top: 94px;
@@ -16,7 +12,6 @@ margin: -94px; */
     margin: 0 auto;
     width: 1200px;
     padding: 0px;
-    flex-wrap: wrap;
 }
 
 :root {
@@ -34,7 +29,6 @@ body {
     color: var(--brand-color-secondary);
     background-color: var(--background-page-color);
     margin: 0 auto;
-    flex-direction: row;
     padding: 0;
 }
 
@@ -108,8 +102,9 @@ h5 {
 }
 
 a:hover,
-:focus {
+a:focus {
     color: #2196f3;
+    fill: currentColor;
 }
 
 button:hover {
@@ -136,7 +131,6 @@ button:hover {
 
 .menu {
     display: flex;
-    /* padding jest 32, daje tyle i jest źle, tak samo jak usuwam statyczne wartości z header, nic sie nie zmienia, jedynie na gorzej */
     background-color: var(--brand-color-default);
 }
 
@@ -150,8 +144,7 @@ button:hover {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    width: 145px;
-    height: 31px;
+   
     text-decoration: none;
     color: var(--brand-color-primary);
 }
@@ -283,12 +276,12 @@ button:hover {
     background: #2f303a;
 }
 
-.container2 {
+/* .container2 {
     margin: 0 auto;
     margin-top: 5px;
     max-width: 1600px;
     padding: 0px;
-}
+} */
 
 .container3 {
     margin-top: -40px;
