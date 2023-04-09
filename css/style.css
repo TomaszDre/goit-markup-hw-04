@@ -120,10 +120,10 @@ h1 {
 
 .team-title {
     font-weight: 700;
-    font-size: 36px;
+    /* font-size: 36px;
     text-align: center;
     line-height: 1;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
 }
 
 h4 {
@@ -573,26 +573,45 @@ letter-spacing: 0.03em;
 
 /* Our clients */
 
-.clients-list {
-    display: flex;
-    gap: 30px;
+
+
+.clients {
     text-align: center;
 }
 
-.client-link {
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-list-item {
+    width: 170px;
+    height: 92px;
+    border: solid 1px;
+    border-color: var(--background-icon-color);
+    border-radius: 4px;
+}
+
+.clients-list-item:hover,
+.clients-list-item:focus {
+    border-color: var(--brand-color-primary);
+    --background-icon-color: var(--brand-color-primary);
+}
+
+/* .client-link {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    /* display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     fill: var(--brand-color-primary);
-    padding: 19px 0; */
-}
+    padding: 19px 0;
+} */
 
 .client-icon {
-    fill: var(--brand-color-primary);
+    fill: var(--background-icon-color);
     margin: 16px 32px;
 }
 
@@ -601,9 +620,9 @@ letter-spacing: 0.03em;
     fill: var(--brand-color-primary);
 }
 
-.client-link:is(:hover, :focus) {
+/* .client-link:is(:hover, :focus) {
     border-color: var(--brand-color-primary);
-}
+} */
 
 /* Footer */
 
