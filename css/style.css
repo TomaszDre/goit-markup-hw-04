@@ -45,8 +45,11 @@ ul {
     padding: 0;
 }
 
-nav, a { text-decoration: none;
-color: var(--brand-color-secondary);}
+nav,
+a {
+    text-decoration: none;
+    color: var(--brand-color-secondary);
+}
 
 img {
     display: block;
@@ -84,8 +87,11 @@ margin: -94px; */
     padding: 0 15px;
 }
 
-button {
+button:hover,
+button:focus {
     cursor: pointer;
+    color: var(--brand-color-white);
+    background-color: var(--brand-color-primary);
 }
 
 p {
@@ -145,26 +151,22 @@ a:focus {
     fill: currentColor;
 }
 
-button:hover {
-    background-color: #2196f3;
-    color: #ffffff;
-}
-
 .button {
-    font-family: "Roboto";
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.88;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: var(--brand-color-white);
     width: 200px;
     height: 50px;
-    background: #2196f3;
+    background-color: var(--brand-color-primary);
     box-shadow: 0px 4px 4px #00000026;
     border-radius: 4px;
+    border: none;
+    padding: 10px 40px;
+    margin-top: 40px;
 }
 
 .menu {
@@ -205,11 +207,9 @@ button:hover {
 .navigation-list {
     align-items: center;
     display: flex;
-    
-    
-   
+
     gap: 46px;
-    
+
     margin-left: 93px;
 }
 
@@ -243,9 +243,7 @@ button:hover {
     display: flex;
     align-items: center;
     color: var(--paragraf-text-color);
-    
 }
-
 
 /* ZAMÓW USŁUGĘ */
 
@@ -340,13 +338,19 @@ letter-spacing: 0.03em;
 
 /* EFEKTYWNE  */
 
-.order-service {
-    border: none;
-}
 .content {
-    display: flex;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    width: 696px;
+    color: var(--brand-color-white);
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 /* OUR TEAM */
@@ -361,8 +365,6 @@ letter-spacing: 0.03em;
 
 .our-team-background {
     background-color: var(--brand-color-ordinary);
-    flex-direction: column;
-    
 }
 
 .our-team-cards {
@@ -481,6 +483,7 @@ letter-spacing: 0.03em;
     padding: 200px 0;
     margin: 0 auto;
     justify-content: center;
+    text-align: center;
     background-color: var(--brand-color-background);
     background-image: linear-gradient(
             90deg,
@@ -488,7 +491,6 @@ letter-spacing: 0.03em;
             rgba(47, 48, 58, 0.4) 0%
         ),
         url(/goit-markup-hw-04/images/tło2.jpg);
-    text-align: center;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -558,7 +560,6 @@ letter-spacing: 0.03em;
 .icon-class {
     fill: var(--background-icon-color);
     display: block;
-
 }
 
 /* Our clients */
@@ -597,9 +598,10 @@ letter-spacing: 0.03em;
 
 /* Footer */
 
-.footer-join {margin-left: 700px;
-margin-top: -160px;
-display: block;
+.footer-join {
+    margin-left: 700px;
+    margin-top: -160px;
+    display: block;
 }
 
 .join-header-footer {
@@ -614,7 +616,6 @@ display: block;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 20px;
-
 }
 
 .footer-icons-properties li {
@@ -624,9 +625,9 @@ display: block;
 
 .list-icons-footer:hover,
 .list-icons-footer:focus {
-background-color: var(--brand-color-primary);
---icon-color: var(--brand-color-white);
-cursor: pointer;
+    background-color: var(--brand-color-primary);
+    --icon-color: var(--brand-color-white);
+    cursor: pointer;
 }
 
 /* icons list
