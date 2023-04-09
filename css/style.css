@@ -9,6 +9,7 @@
     --brand-color-logo-black: #000000;
     --paragraf-text-color: #757575;
     --footer-icon-color: rgba(255, 255, 255, 0.1);
+    --footer-text-color: rgba(255, 255, 255, 0.6);
     --line-color: #ececec;
     --main-font: "Roboto", sans-serif;
 }
@@ -67,17 +68,17 @@ header:hover {
 
 footer {
     padding: 60px 0;
-    color: var(--brand-color-background);
+    background-color: var(--brand-color-background);
 }
 
 footer:hover {
     color: var(--brand-color-primary);
 }
 
-svg {
+/* svg {
     fill: var(--background-icon-color);
     color: var(--brand-color-primary);
-}
+} */
 
 /* notatka REDUKCJA MARGINESOW
 margin: -94px; */
@@ -180,14 +181,11 @@ a:focus {
 /* LOGO */
 
 .logo {
-    text-decoration: none;
     font-family: "Raleway";
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-decoration: none;
     color: var(--brand-color-primary);
 }
 
@@ -302,26 +300,30 @@ letter-spacing: 0.03em;
     padding-bottom: 94px;
 }
 
-.address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-}
-.footer-address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
-    text-decoration: none;
+/* Address */
+
+.address-set {
+    margin-top: 20px;
 }
 
-.background-footer {
-    background: #2f303a;
+.address-gap:not(:last-child) {
+margin-bottom: 9px;
+}
+
+.address {
+    font-family: var(--main-font);
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-white);
+}
+.footer-address {
+    font-family: var(--main-font);
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: 0.03em;
+    color: var(--footer-text-color);
+    text-decoration: none;
 }
 
 /* .container2 {
@@ -331,11 +333,19 @@ letter-spacing: 0.03em;
     padding: 0px;
 } */
 
-.container3 {
+.footer-flex {
+    display: flex;
+}
+
+.footer-block {
+    display: block;
+}
+
+/* .container3 {
     margin-top: -40px;
     padding-top: 60px;
     padding-bottom: 60px;
-}
+} */
 
 /* EFEKTYWNE  */
 
@@ -568,7 +578,6 @@ letter-spacing: 0.03em;
 .icon-class-footer {
     fill: var(--brand-color-white);
     display: block;
-    margin: 16px;
 }
 
 /* Our clients */
@@ -628,7 +637,7 @@ letter-spacing: 0.03em;
 
 .footer-join {
     margin-left: 70px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .join-header-footer {
@@ -646,6 +655,7 @@ letter-spacing: 0.03em;
 }
 
 .footer-icons-properties li {
+    padding: 12px 12px;
     border-radius: 50%;
     background-color: var(--footer-icon-color);
 }
@@ -653,10 +663,8 @@ letter-spacing: 0.03em;
 .list-icons-footer:hover,
 .list-icons-footer:focus {
     background-color: var(--brand-color-primary);
-    --icon-color: var(--brand-color-white);
+    --background-icon-color: var(--brand-color-white);
     cursor: pointer;
-    /* width: 44px;
-    height: 44px; */
 }
 
 /* icons list
