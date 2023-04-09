@@ -206,9 +206,7 @@ a:focus {
 .navigation-list {
     align-items: center;
     display: flex;
-
     gap: 46px;
-
     margin-left: 93px;
 }
 
@@ -216,7 +214,7 @@ a:focus {
     display: flex;
     gap: 50px;
     margin-left: auto;
-    align-items: center;
+    
 }
 
 /* .email {
@@ -242,6 +240,11 @@ a:focus {
     display: flex;
     align-items: center;
     color: var(--paragraf-text-color);
+}
+
+.contact-set:hover,
+.contact-set:focus {
+    --paragraf-text-color: var(--brand-color-primary);
 }
 
 /* ZAMÓW USŁUGĘ */
@@ -480,13 +483,14 @@ margin-bottom: 9px;
 /* HEADER */
 
 .icon-contact {
-    margin: 0 10px;
+    margin-right: 10px;
+    fill: var(--paragraf-text-color);
 }
 
-.icon-contact:hover,
+/* .icon-contact:hover,
 .icon-contact:focus {
     color: var(--brand-color-primary);
-}
+} */
 
 /* MAIN */
 
