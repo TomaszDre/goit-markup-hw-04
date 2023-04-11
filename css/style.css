@@ -214,7 +214,6 @@ a:focus {
     display: flex;
     gap: 50px;
     margin-left: auto;
-    
 }
 
 /* .email {
@@ -310,7 +309,7 @@ letter-spacing: 0.03em;
 }
 
 .address-gap:not(:last-child) {
-margin-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .address {
@@ -555,7 +554,7 @@ margin-bottom: 9px;
 .social-links-properties > li,
 .list-icons-footer > li {
     padding: 12px 12px;
-    border-radius: 50%;   
+    border-radius: 50%;
 }
 
 .social-links-properties li:hover,
@@ -576,7 +575,6 @@ margin-bottom: 9px;
     fill: var(--background-icon-color);
     display: block;
     /* color: var(--brand-color-primary); */
-    
 }
 
 .icon-class-footer {
@@ -585,8 +583,6 @@ margin-bottom: 9px;
 }
 
 /* Our clients */
-
-
 
 .clients {
     text-align: center;
@@ -655,7 +651,7 @@ margin-bottom: 9px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .footer-icons-properties li {
